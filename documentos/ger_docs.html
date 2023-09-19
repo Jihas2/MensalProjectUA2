@@ -4,7 +4,7 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Funcionários</title>
+   <title>Documentação</title>
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
    <style>
@@ -86,7 +86,7 @@
                <nav class="navbar">
                   <div class="container-fluid">
                      <i class="fas fa-user user-icon"></i> <!-- Ícone de usuário -->
-                     <span>Funcionários</span>
+                     <span>Documentação</span>
                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
                         style="cursor: pointer;" aria-expanded="true">
                         <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512">
@@ -122,20 +122,25 @@
                <table class="table tabela-funcionarios">
                   <thead>
                      <tr>
-                        <th>MATRÍCULA</th>
-                        <th>NOME</th>
-                        <th>TELEFONE</th>
-                        <th>CPF</th>
+                        <th>COD. DOC.</th>
+                        <th>TP. DOC.</th>
+                        <th>DESCRIÇÃO</th>
+                        <th>USU. ULT VIS.</th>
+                        <th>DT. CADASTRO</th>
                         <th>OPÇÕES</th>
                      </tr>
                   </thead>
                   <tbody>
                      <tr>
-                        <td>006288</td>
-                        <td>Jesus</td>
-                        <td>(11) 1234-5678</td>
-                        <td>123.456.789-00</td>
+                        <td>00001</td>
+                        <td>ART</td>
+                        <td>OBRA DO JOAO</td>
+                        <td>RICARDO</td>
+                        <td>10/10/2022</td>
                         <td>
+                           <button type="button" class="btn btn-info btn-sm" onclick="mostrarDocumentacao()">
+                              <i class="fas fa-eye"></i>
+                           </button>
                            <a href="#" class="btn btn-primary btn-sm">
                               <i class="fas fa-edit"></i>
                            </a>
@@ -145,11 +150,15 @@
                         </td>
                      </tr>
                      <tr>
-                        <td>006200</td>
-                        <td>Italo</td>
-                        <td>(11) 1234-5678</td>
-                        <td>123.456.789-00</td>
+                        <td>00002</td>
+                        <td>RTT</td>
+                        <td>OBRA DO CLEITON</td>
+                        <td>JESUS</td>
+                        <td>10/12/2022</td>
                         <td>
+                           <button type="button" class="btn btn-info btn-sm" onclick="mostrarDocumentacao()">
+                              <i class="fas fa-eye"></i>
+                           </button>
                            <a href="#" class="btn btn-primary btn-sm">
                               <i class="fas fa-edit"></i>
                            </a>
@@ -159,11 +168,15 @@
                         </td>
                      </tr>
                      <tr>
-                        <td>006202</td>
-                        <td>João Silva</td>
-                        <td>(11) 1234-5678</td>
-                        <td>123.456.789-00</td>
+                        <td>00003</td>
+                        <td>RTT</td>
+                        <td>OBRA DO GABRIEL</td>
+                        <td>JESUS</td>
+                        <td>01/02/2023</td>
                         <td>
+                           <button type="button" class="btn btn-info btn-sm" onclick="mostrarDocumentacao()">
+                              <i class="fas fa-eye"></i>
+                           </button>
                            <a href="#" class="btn btn-primary btn-sm">
                               <i class="fas fa-edit"></i>
                            </a>
@@ -173,11 +186,15 @@
                         </td>
                      </tr>
                      <tr>
-                        <td>006299</td>
-                        <td>Cleitinho</td>
-                        <td>(11) 1234-5678</td>
-                        <td>123.456.789-00</td>
+                        <td>00004</td>
+                        <td>RTT</td>
+                        <td>OBRA DO JIHAD</td>
+                        <td>JESUS</td>
+                        <td>11/02/2023</td>
                         <td>
+                           <button type="button" class="btn btn-info btn-sm" onclick="mostrarDocumentacao()">
+                              <i class="fas fa-eye"></i>
+                           </button>
                            <a href="#" class="btn btn-primary btn-sm">
                               <i class="fas fa-edit"></i>
                            </a>
@@ -187,11 +204,15 @@
                         </td>
                      </tr>
                      <tr>
-                        <td>006870</td>
-                        <td>Claudinei</td>
-                        <td>(11) 1234-5678</td>
-                        <td>123.456.789-00</td>
+                        <td>00005</td>
+                        <td>PPRA</td>
+                        <td>OBRA DO RICARDO</td>
+                        <td>JIHAD</td>
+                        <td>11/03/2023</td>
                         <td>
+                           <button type="button" class="btn btn-info btn-sm" onclick="mostrarDocumentacao()">
+                              <i class="fas fa-eye"></i>
+                           </button>
                            <a href="#" class="btn btn-primary btn-sm">
                               <i class="fas fa-edit"></i>
                            </a>
@@ -203,7 +224,7 @@
                   </tbody>
                </table>
                <div class="text-center">
-                  <a href="/funcionarios/cadastro_func.html" class="btn btn-success btn-sm">Cadastrar Funcionários</a>
+                  <a href="/documentos/cadastro_docs.html" class="btn btn-success btn-sm">Cadastrar Documentação</a>
                </div>
             </div>
          </div>

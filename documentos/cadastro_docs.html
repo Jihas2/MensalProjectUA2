@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Funcionários</title>
+    <title>Cadastro de Documentação</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
@@ -26,7 +26,7 @@
             border-radius: 10px;
             padding: 20px;
             width: 100%;
-            height: 90vh;
+            /* height: 90vh; */
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -85,7 +85,7 @@
                     <nav class="navbar">
                         <div class="container-fluid">
                             <i class="fas fa-user user-icon"></i> <!-- Ícone de usuário -->
-                            <span>Cadastro de Funcionários</span>
+                            <span>Cadastro de Documentação</span>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#menu" style="cursor: pointer;" aria-expanded="true">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512">
@@ -102,7 +102,7 @@
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="ger_func.html">Funcionários</a>
+                                        <a class="nav-link" href="/funcionarios/ger_func.html">Funcionários</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="/progresso/ger_progresso.html">Progresso</a>
@@ -120,22 +120,40 @@
                     <form class="formulario">
                         <div class="row form-group">
                             <div class="col-6">
-                                <label for="nome">Nome:</label>
-                                <input type="text" class="form-control" id="nome" placeholder="Digite o nome">
+                                <label for="tp_doc">Tp. Documentação:</label>
+                                <select class="form-control">
+                                    <option>ART</option>
+                                    <option>RTT</option>
+                                    <option>PPRA</option>
+                                </select>
                             </div>
                             <div class="col-6">
-                                <label for="telefone">Telefone:</label>
-                                <input type="text" class="form-control" id="telefone" placeholder="Digite o telefone">
+                                <label for="usu_doc">Vincular Usu. Documentação:</label>
+                                <select class="form-control">
+                                    <option>Jesus</option>
+                                    <option>Ricardo</option>
+                                    <option>Jihad</option>
+                                </select>
                             </div>
                         </div>
                         <div class="row form-group">
                             <div class="col-6">
-                                <label for="nome">Matricula:</label>
-                                <input type="text" class="form-control" id="nome" placeholder="Digite o nome">
+                                <label for="upload_doc">Upload Documentação:</label>
+                                <input type="file" class="form-control" id="up_doc" readonly>
                             </div>
                             <div class="col-6">
-                                <label for="telefone">CPF:</label>
-                                <input type="text" class="form-control" id="telefone" placeholder="Digite o telefone">
+                                <label for="edit_doc">Usuario que pode editar Doc:</label>
+                                <select class="form-control">
+                                    <option>Jesus</option>
+                                    <option>Ricardo</option>
+                                    <option>Jihad</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-6">
+                                <label for="upload_doc">Descrição:</label>
+                                <input type="text" class="form-control" id="up_doc">
                             </div>
                         </div>
                         <div class="text-right">
@@ -151,7 +169,7 @@
 </body>
 <script>
     function mostrarAlertaFunc() {
-        alert("Usuário cadastrado com sucesso!");
+        alert("Documentação cadastrada com sucesso !");
     }
     function confirmarLogout() {
         var confirmacao = confirm("Você está fazendo logout do sistema !");
