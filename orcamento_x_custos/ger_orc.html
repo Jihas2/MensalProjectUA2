@@ -78,15 +78,15 @@
 
 <body>
 
-    <div class="container-fluid mt-4">
+    <div class="container-fluid mt-6">
         <div class="row justify-content-center">
-            <div class="col-lg-10 col-md-8 col-sm-10">
+            <div class="col-lg-12 col-md-12 col-sm-12" style="margin: 2.5vh;">
                 <div class="quadrado">
                     <!-- NAVBAR -->
                     <nav class="navbar">
                         <div class="container-fluid">
                             <i class="fas fa-user user-icon"></i> <!-- Ícone de usuário -->
-                            <span>ORÇADO X CUSTOS</span>
+                            <span>Orçado X Custos</span>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#menu" style="cursor: pointer;" aria-expanded="true">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512">
@@ -103,10 +103,21 @@
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="/funcionarios/ger_func.html">Inicio</a>
+                                        <a class="nav-link" href="/funcionarios/ger_func.html">Funcionários</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="login/login.html">Recursos</a>
+                                        <a class="nav-link" href="/progresso/ger_progresso.html">Monitoramento de
+                                            Progresso</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/materiais/ger_materiais.html">materiais</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/documentos/ger_docs.html">Documentação</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="ger_orc.html">Orçado X
+                                            Custos</a>
                                     </li>
                                 </ul>
                             </div>
@@ -132,11 +143,14 @@
                                 <th>R$ 1200,00.</th>
                                 <th>R$ 200,00</th>
                                 <td>
-                                    <a href="#" class="btn btn-primary btn-sm mr-2">
-                                        <i class="fas fa-edit"></i> Editar
+                                    <a href="#" class="btn btn-success btn-sm">
+                                        <i class="fas fa-plus"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-primary btn-sm ">
+                                        <i class="fas fa-edit"></i>
                                     </a>
                                     <a href="#" class="btn btn-danger btn-sm">
-                                        <i class="fas fa-trash"></i> Excluir
+                                        <i class="fas fa-trash"></i>
                                     </a>
                                 </td>
                             </tr>
@@ -147,11 +161,14 @@
                                 <th>R$ 100,00</th>
                                 <th>R$ 59,50</th>
                                 <td>
-                                    <a href="#" class="btn btn-primary btn-sm mr-2">
-                                        <i class="fas fa-edit"></i> Editar
+                                    <a href="#" class="btn btn-success btn-sm">
+                                        <i class="fas fa-plus"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-primary btn-sm ">
+                                        <i class="fas fa-edit"></i>
                                     </a>
                                     <a href="#" class="btn btn-danger btn-sm">
-                                        <i class="fas fa-trash"></i> Excluir
+                                        <i class="fas fa-trash"></i>
                                     </a>
                                 </td>
                             </tr>
@@ -162,11 +179,14 @@
                                 <th>R$ 100,00</th>
                                 <th>R$ 20,00</th>
                                 <td>
-                                    <a href="#" class="btn btn-primary btn-sm mr-2">
-                                        <i class="fas fa-edit"></i> Editar
+                                    <a href="#" class="btn btn-success btn-sm">
+                                        <i class="fas fa-plus"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-primary btn-sm ">
+                                        <i class="fas fa-edit"></i>
                                     </a>
                                     <a href="#" class="btn btn-danger btn-sm">
-                                        <i class="fas fa-trash"></i> Excluir
+                                        <i class="fas fa-trash"></i>
                                     </a>
                                 </td>
                             </tr>
@@ -177,11 +197,14 @@
                                 <th>R$ 150,00</th>
                                 <th>R$ -50,00</th>
                                 <td>
-                                    <a href="#" class="btn btn-primary btn-sm mr-2">
-                                        <i class="fas fa-edit"></i> Editar
+                                    <a href="#" class="btn btn-success btn-sm">
+                                        <i class="fas fa-plus"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-primary btn-sm ">
+                                        <i class="fas fa-edit"></i>
                                     </a>
                                     <a href="#" class="btn btn-danger btn-sm">
-                                        <i class="fas fa-trash"></i> Excluir
+                                        <i class="fas fa-trash"></i>
                                     </a>
                                 </td>
                             </tr>
@@ -192,16 +215,41 @@
                                 <th>R$ 20,00</th>
                                 <th>R$ -20,00</th>
                                 <td>
-                                    <a href="#" class="btn btn-primary btn-sm mr-2">
-                                        <i class="fas fa-edit"></i> Editar
+                                    <a href="#" class="btn btn-success btn-sm">
+                                        <i class="fas fa-plus"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-primary btn-sm ">
+                                        <i class="fas fa-edit"></i>
                                     </a>
                                     <a href="#" class="btn btn-danger btn-sm">
-                                        <i class="fas fa-trash"></i> Excluir
+                                        <i class="fas fa-trash"></i>
                                     </a>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
+
+                    <div class="text-center">
+                        <a href="cad_orc.html" class="btn btn-success btn-sm">Cadastrar Orçamentos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal para Adicionar Valor com iframe -->
+    <div class="modal fade" id="adicionarValorModal" tabindex="-1" role="dialog"
+        aria-labelledby="adicionarValorModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="adicionarValorModalLabel">Adicionar Valor</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Iframe para adicionar valor -->
+                    <iframe src="ger_orc.html" width="100%" height="400"></iframe>
                 </div>
             </div>
         </div>
