@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Funcionários</title>
+    <title>Cadastro de Progresso</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
@@ -85,7 +85,7 @@
                     <nav class="navbar">
                         <div class="container-fluid">
                             <i class="fas fa-user user-icon"></i> <!-- Ícone de usuário -->
-                            <span>Cadastro de Funcionários</span>
+                            <span>Cadastro de Progresso</span>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#menu" style="cursor: pointer;" aria-expanded="true">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512">
@@ -102,7 +102,7 @@
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="ger_func.html">Funcionários</a>
+                                        <a class="nav-link" href="/funcionarios/ger_func.html">Funcionários</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="/progresso/ger_progresso.html">Monitoramento de
@@ -125,22 +125,29 @@
                     <form class="formulario">
                         <div class="row form-group">
                             <div class="col-6">
-                                <label for="nome">Nome:</label>
-                                <input type="text" class="form-control" id="nome" placeholder="Digite o nome">
+                                <label for="nome">Obra a Vincular:</label>
+                                <select class="form-control">
+                                    <option value="select" selected disabled>Selecione a obra:</option>
+                                    <option value="projeto">Construção Silvia</option>
+                                    <option value="projeto">Construções Ferreira</option>
+                                    <option value="projeto">Construtora Lima</option>
+                                    <option value="projeto">Construções Martins</option>
+                                    <option value="projeto">Construtora Ramos</option>
+                                </select>
                             </div>
                             <div class="col-6">
-                                <label for="telefone">Telefone:</label>
-                                <input type="tel" class="form-control" id="telefone" placeholder="(00) 00000-0000">
+                                <label for="dtObra">Data de Inicio da Obra:</label>
+                                <input type="date" class="form-control" id="telefone" placeholder="dd/mm/YYYY">
                             </div>
                         </div>
                         <div class="row form-group">
                             <div class="col-6">
-                                <label for="nome">Matricula:</label>
-                                <input type="text" class="form-control" id="nome" placeholder="Digite a matricula">
+                                <label for="nome">Portagem da Conclusão da Obra:</label>
+                                <input type="number" class="form-control" id="nome" placeholder="0%">
                             </div>
                             <div class="col-6">
-                                <label for="telefone">CPF:</label>
-                                <input type="text" class="form-control" id="telefone" placeholder="000.000.000-00">
+                                <label for="dtObra">Data de Entrega da Obra:</label>
+                                <input type="date" class="form-control" id="telefone" placeholder="dd/mm/YYYY">
                             </div>
                         </div>
                         <div class="text-right">
@@ -156,7 +163,7 @@
 </body>
 <script>
     function mostrarAlertaFunc() {
-        alert("Usuário cadastrado com sucesso!");
+        alert("Progresso cadastrado com sucesso!");
     }
     function confirmarLogout() {
         var confirmacao = confirm("Você está fazendo logout do sistema !");
